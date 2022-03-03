@@ -1,13 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Header } from './header';
 
 const Main = styled.main`
   margin: 0;
   padding: 0;
 `;
 
-const Layout = ({ children }) => <Main>{children}</Main>;
+const Layout = ({ children }) => (
+  <>
+    <Header />
+    <Main>{children}</Main>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequred,
