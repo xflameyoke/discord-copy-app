@@ -12,4 +12,15 @@ export default styled.div`
     width: 150px;
     height: 100px;
   }
+
+  li {
+    float: left;
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.white};
+  }
 `;

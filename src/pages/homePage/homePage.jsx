@@ -1,5 +1,13 @@
 import React from 'react';
+import { Header } from '../../layout/header';
+import { HomeContent } from '../../components/homeContent';
+import Container from './homePage.styled';
 
-const HomePage = () => <h1>Home Page</h1>;
+const HomePage = () => (
+  <Container>
+    <Header />
+    <HomeContent />
+  </Container>
+);
 
 export default HomePage;

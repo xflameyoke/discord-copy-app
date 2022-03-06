@@ -1,20 +1,37 @@
 import React from 'react';
-import DiscordLogoBlack from '../../assets/logos/discordLogoBlack';
+import { Link } from 'react-router-dom';
+import DiscordLogoWhite from '../../assets/logos/discordLogoWhite';
 import LoginButton from '../../components/loginButton/loginButton';
 import Container from './header.styled';
 
 const Header = () => (
   <Container>
-    <DiscordLogoBlack />
+    <Link to="/">
+      <DiscordLogoWhite />
+    </Link>
     <ul>
-      <li>Download</li>
-      <li>Nitro</li>
-      <li>Safety</li>
-      <li>Support</li>
-      <li>Blog</li>
-      <li>Careers</li>
+      <li>
+        <Link to="/download">Download</Link>
+      </li>
+      <li>
+        <Link to="/nitro">Nitro</Link>
+      </li>
+      <li>
+        <Link to="safety">Safety</Link>
+      </li>
+      <li>
+        <Link to="/support">Support</Link>
+      </li>
+      <li>
+        <Link to="/blog">Blog</Link>
+      </li>
+      <li>
+        <Link to="/careers">Careers</Link>
+      </li>
     </ul>
-    <LoginButton />
+    <Link to="/login">
+      <LoginButton />
+    </Link>
   </Container>
 );
 
