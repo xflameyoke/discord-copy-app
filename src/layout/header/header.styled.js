@@ -5,7 +5,8 @@ export default styled.div`
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 0;
 
   svg {
     width: 150px;

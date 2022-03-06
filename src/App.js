@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from './layout/layout';
-import { LoginPage } from './pages';
+import { HomePage } from './pages';
 
 const App = () => (
   <Layout>
-    <LoginPage />
+    <HomePage />
   </Layout>
 );
 
