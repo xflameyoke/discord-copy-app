@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Header } from '../layout/header';
 
 const Main = styled.main`
   margin: 0;
@@ -9,6 +10,7 @@ const Main = styled.main`
 
 const Layout = ({ children }) => (
   <>
+    <Header />
     <Main>{children}</Main>
   </>
 );

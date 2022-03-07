@@ -1,5 +1,6 @@
 import React from 'react';
+import StyledButton from './loginButton.styled';
 
-const LoginButton = () => <button>Login</button>;
+const LoginButton = () => <StyledButton>Login</StyledButton>;
 
 export default LoginButton;

@@ -1,26 +1,37 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export const StyledHeader = styled.header`
   width: 100%;
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-  svg {
-    width: 150px;
-    height: 100px;
+  a {
+    text-decoration: none;
   }
+`;
 
+export const StyledNav = styled.nav`
   li {
     float: left;
-    padding: 10px;
+    margin: 20px;
     list-style-type: none;
   }
 
   a {
-    text-decoration: none;
     color: ${({ theme }) => theme.colors.white};
+
+    &:hover {
+      border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+    }
+  }
+`;
+
+export const StyledLogo = styled.div`
+  svg {
+    width: 120px;
+    height: 100px;
   }
 `;

@@ -12,8 +12,10 @@ export const Container = styled.div`
 `;
 
 export const HeroBg = styled.div`
-  width: 100vw;
-  heigth: 100vh;
-  background-size: cover;
-  background: url(${Background});
+  height: 87vh;
+  width: 100%;
+  position: relative;
+  top: -80px;
+  left: 0;
+  background-image: url(${Background});
 `;

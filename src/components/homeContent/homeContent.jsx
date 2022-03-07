@@ -3,8 +3,8 @@ import { Container, HeroBg } from './homeContent.styled';
 
 const HomeContent = () => (
   <>
-    <Container>Home Content</Container>
     <HeroBg />
+    <Container>Home Content</Container>
   </>
 );
 
