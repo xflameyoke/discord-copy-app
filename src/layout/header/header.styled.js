@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 150px;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@ export const StyledHeader = styled.header`
 export const StyledNav = styled.nav`
   li {
     float: left;
-    margin: 20px;
+    margin: 5px;
     list-style-type: none;
   }
 
