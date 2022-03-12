@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
 import DiscordLogoWhite from '../../assets/logos/discordLogoWhite';
 import LoginButton from '../../components/loginButton/loginButton';
 import { Navigation } from '../../components/navigation/';
@@ -7,15 +8,15 @@ import { StyledHeader, StyledLogo } from './header.styled';
 
 const Header = () => (
   <StyledHeader>
-    <Link to="/">
-      <StyledLogo>
-        <DiscordLogoWhite />
+    <Grid container>
+      <StyledLogo item>
+        <Link to="/">
+          <DiscordLogoWhite />
+        </Link>
       </StyledLogo>
-    </Link>
-    <Navigation />
-    <Link to="/login">
-      <LoginButton />
-    </Link>
+      <Navigation item />
+      <LoginButton item />
+    </Grid>
   </StyledHeader>
 );
 

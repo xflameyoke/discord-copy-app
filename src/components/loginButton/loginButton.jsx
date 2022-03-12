@@ -1,6 +1,15 @@
 import React from 'react';
-import StyledButton from './loginButton.styled';
+import { Link } from 'react-router-dom';
+import { StyledButton, StyledText, Wrapper } from './loginButton.styled';
 
-const LoginButton = () => <StyledButton>Login</StyledButton>;
+const LoginButton = () => (
+  <Wrapper>
+    <StyledButton>
+      <StyledText>
+        <Link to="/login">Login</Link>
+      </StyledText>
+    </StyledButton>
+  </Wrapper>
+);
 
 export default LoginButton;

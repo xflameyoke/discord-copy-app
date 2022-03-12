@@ -1,35 +1,21 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
+  box-sizing: content-box;
   width: 100vw;
-  height: 150px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-
-  a {
-    text-decoration: none;
-  }
-`;
-
-export const StyledNav = styled.nav`
-  li {
-    float: left;
-    margin: 5px;
-    list-style-type: none;
-  }
-
-  a {
-    color: ${({ theme }) => theme.colors.white};
-
-    &:hover {
-      border-bottom: 1px solid ${({ theme }) => theme.colors.white};
-    }
-  }
 `;
 
 export const StyledLogo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: auto;
+
   svg {
     width: 120px;
     height: 100px;
