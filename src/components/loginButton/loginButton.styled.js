@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 export const StyledButton = styled.button`
   height: 24px;
   padding: 15px;
-  font-weight: 500;
   border: none;
   border-radius: 40px;
   background: white;

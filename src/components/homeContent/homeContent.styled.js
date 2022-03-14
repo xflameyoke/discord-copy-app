@@ -3,12 +3,10 @@ import Background from '../../assets/backgrounds/discordHeader.jpg';
 
 export const Container = styled.div`
   display: flex;
-  text-align: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-  height: 100vh;
+  align-items: center;
+  width: 100vw;
+  height: 650px;
 `;
 
 export const HeroBg = styled.div`

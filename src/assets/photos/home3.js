@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home3 = () => (
+const HomePhoto3 = () => (
   <svg
     width="678"
     height="440"
@@ -845,4 +845,4 @@ const Home3 = () => (
   </svg>
 );
 
-export default Home3;
+export default HomePhoto3;

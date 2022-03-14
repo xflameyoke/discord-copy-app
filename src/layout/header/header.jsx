@@ -9,13 +9,13 @@ import { StyledHeader, StyledLogo } from './header.styled';
 const Header = () => (
   <StyledHeader>
     <Grid container>
-      <StyledLogo item>
+      <StyledLogo item xs={12} md={2}>
         <Link to="/">
           <DiscordLogoWhite />
         </Link>
       </StyledLogo>
-      <Navigation item />
-      <LoginButton item />
+      <Navigation item xs={12} md={8} />
+      <LoginButton item xs={12} md={2} />
     </Grid>
   </StyledHeader>
 );
