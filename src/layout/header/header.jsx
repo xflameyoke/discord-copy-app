@@ -1,21 +1,23 @@
 import React from 'react';
-import DiscordLogoBlack from '../../assets/logos/discordLogoBlack';
+import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
+import DiscordLogoWhite from '../../assets/logos/discordLogoWhite';
 import LoginButton from '../../components/loginButton/loginButton';
-import Container from './header.styled';
+import { Navigation } from '../../components/navigation/';
+import { StyledHeader, StyledLogo } from './header.styled';
 
 const Header = () => (
-  <Container>
-    <DiscordLogoBlack />
-    <ul>
-      <li>Download</li>
-      <li>Nitro</li>
-      <li>Safety</li>
-      <li>Support</li>
-      <li>Blog</li>
-      <li>Careers</li>
-    </ul>
-    <LoginButton />
-  </Container>
+  <StyledHeader>
+    <Grid container>
+      <StyledLogo item xs={12} md={2}>
+        <Link to="/">
+          <DiscordLogoWhite />
+        </Link>
+      </StyledLogo>
+      <Navigation item xs={12} md={8} />
+      <LoginButton item xs={12} md={2} />
+    </Grid>
+  </StyledHeader>
 );
 
 export default Header;
